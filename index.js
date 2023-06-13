@@ -44,18 +44,18 @@ function userQuestions () {
                 type: 'input',
                 message: 'What text do you want on the logo? (Enter no more than three characters)',
                 name: 'text',
-            }
+            },
             {
                 type: 'input',
                 message: 'What color do you want the text to be? (Enter color or a hexadecimal color number)',
                 name: 'textColor',
-            }
+            },
             {
                 type: 'list',
                 message: 'What shape do you want the logo to be?',
                 choices: ['circle', 'square', 'triangle'],
                 name: 'shape',
-            }
+            },
             {
                 type: 'input',
                 message: 'What color do you want the shape to be? (Enter color or a hexadecimal color number)',
@@ -73,4 +73,4 @@ function userQuestions () {
         });
 }
 
-userQuestions(); // fun starts here
+userQuestions(); // user questions start when ran
