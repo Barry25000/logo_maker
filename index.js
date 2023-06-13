@@ -20,14 +20,14 @@ function writeToFile(fileName, answers) {
     if (answers.shape === 'Circle') {
        shapeChoice = new Circle(); 
        svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeColor}"/>`;
-    } else if (answers.shape === 'Square') {
+    }else if (answers.shape === 'Square') {
         shapeChoice = new Square();
         svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeColor}"/>`;      
     }else{
         shapeChoice = new Triangle();
         svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeColor}"/>`;
     }
-        // setting text allignment and font size as well as terminating </g> and </svg>
+        // setting text allignment and font size as well as terminating </g> and </svg> in the svgString
     svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
     svgString += '</g>'; 
     svgString += '</svg>';
