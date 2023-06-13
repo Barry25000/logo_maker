@@ -37,7 +37,7 @@ function writeToFile(fileName, answers) {
       });
 }
 
-function userQuestions () { // begin user questions for logo
+function questions () { // begin user questions for logo
     inquirer
         .prompt([
             {
@@ -72,4 +72,4 @@ function userQuestions () { // begin user questions for logo
         });
 }
 
-userQuestions(); // user questions (inquirer) starts on load
+questions(); // user questions (inquirer) starts on load
