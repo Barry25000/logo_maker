@@ -1,4 +1,4 @@
-//Listing required packages
+//required packages and files
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { Circle, Square, Triangle } = require("./lib/shapes.js");
