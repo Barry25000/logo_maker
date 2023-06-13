@@ -1,9 +1,9 @@
 //establishing required packages
-const inquirer = required('inquirer');
-const fs = required('fs');
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 //importing shapes
-const {circle, square, triangle} = required('./lib/shapes.js');
+const {Circle, Square, Triangle} = require('./lib/shapes.js');
 
 
 function writeToFile(fileName, answers) {
@@ -17,19 +17,19 @@ function writeToFile(fileName, answers) {
     svgString += '${answers.shape}'; //user input and inserts into svg file
 
     let shapeChoice; // checking inputed shape and running conditional tests
-    if (answers.shape === 'circle') {
-       shapeChoice = new circle(); 
+    if (answers.shape === 'Circle') {
+       shapeChoice = new Circle(); 
        svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeBackgroundColor}"/>`;
-    } if (answers.shape === 'square') {
-        shapeChoice = new square();
+    } else if (answers.shape === 'Square') {
+        shapeChoice = new Square();
         svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}"/>`;      
     }else{
-        shapeChoice = new 'triangle'();
+        shapeChoice = new Triangle();
         svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
     }
         // setting text allignment and font size
     svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
-    svgString += '<g>'; 
+    svgString += '</g>'; 
     svgString += "</svg>";
 
     fs.writeFile(fileName, svgString, (err) => { // writting file as well as running error check
@@ -53,7 +53,7 @@ function userQuestions () {
             {
                 type: 'list',
                 message: 'What shape do you want the logo to be?',
-                choices: ['circle', 'square', 'triangle'],
+                choices: ['Circle', 'Square', 'Triangle'],
                 name: 'shape',
             },
             {
@@ -65,10 +65,9 @@ function userQuestions () {
         ])
         .then((answers) => {
             if (answers.text.length > 3) {
-              console.log("Must enter a value of no more than 3 characters");
-              promptUser();
+              console.log('Must enter a value of no more than 3 characters');
             } else {
-              writeToFile("logo.svg", answers);
+              writeToFile('logo.svg', answers);
             }
         });
 }
