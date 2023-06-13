@@ -9,7 +9,7 @@ prompt user for shape via a list of available shapes
     circle, triangle, or square
 
 prompt user for color of shape
-    ser can enter a color keyword or a hexadecimal input
+    user can enter a color keyword or a hexadecimal input
 
 after all inputs have been entered a SVG file is created named 'logo.svg'
 and the output text "Generated logo.svg" is printed in the command line
