@@ -1,1 +1,51 @@
-# logo_maker
+# Title of Project SVG Logo Maker
+
+![MIT](https://img.shields.io/badge/license-MIT-green)
+
+## Description
+
+Using Node JS you are able to create a simple logo with text, text color, shape choice and shape color.
+
+## Table of Contents
+
+- [Installation](#installation)
+
+- [Usage](#usage)
+
+- [License](#license)
+
+- [Contributing](#contributing)
+
+- [Tests](#tests)
+
+- [Questions](#questions)
+
+## Installation
+
+To install necessary dependencies, run the following command: <br>
+npm i, or npm install.
+
+## Usage
+
+To create a simple logo with color and text.
+
+## License
+
+This project is licensed under. <br>
+MIT
+https://opensource.org/license/MIT/
+
+## Contributing
+
+Barry Engler. I also used my tutor Nathan Engler and Jose Lopez to help guide me along this project.
+
+## Tests
+
+To run tests, run the following command: <br>
+npm run test, all 11 tests will pass.
+
+## Questions
+
+Please direct any questions to.<br>
+barryengler@gmail.com <br>
+[GitHub](https://github.com/Barry25000)
