@@ -51,4 +51,4 @@ barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
 
 REPO SCREENSHOT
-![repo_screenshot](https://github.com/Barry25000/logo_maker/blob/main/lib/images/Repo_screenshot.png)
+![repo screenshot](https://github.com/Barry25000/logo_maker/blob/main/lib/images/Repo_screenshot.png)
