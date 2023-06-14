@@ -49,3 +49,6 @@ npm run test, all 11 tests will pass.
 Please direct any questions to.<br>
 barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
+
+REPO SCREENSHOT
+![repo_screenshot](https://github.com/Barry25000/logo_maker/blob/main/lib/images/Repo_screenshot.png)
