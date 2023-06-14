@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { Circle, Square, Triangle } = require("./lib/shapes.js");
+const SVG = require("./lib/svg.js");
 
 // design questions for logo
 function questions() {
@@ -44,20 +45,19 @@ function questions() {
 }
 
 function writeToFile(fileName, answers) {
-  let svgString = ""; //sets sting to null
-
-  svgString = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><g>${answers.shape}`;
-  let shapeChoice; // checking inputed shape and running conditional tests
-  if (answers.shape === "Circle") {
-    shapeChoice = new Circle();
-    svgString += `<circle cx="150" cy="100" r="80" fill="${answers.shapeColor}"/><text x="150" y="125" text-anchor="middle" font-size="60" fill="${answers.textColor}">${answers.text}</text></g></svg>`;
-  } else if (answers.shape === "Square") {
-    shapeChoice = new Square();
-    svgString += `<rect x="90" y="40" width="120" height="120" fill="${answers.shapeColor}"/><text x="150" y="125" text-anchor="middle" font-size="60" fill="${answers.textColor}">${answers.text}</text></g></svg>`;
-  } else {
-    shapeChoice = new Triangle();
-    svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeColor}"/><text x="150" y="150" text-anchor="middle" font-size="60" fill="${answers.textColor}">${answers.text}</text></g></svg>`;
+  const svg = new SVG();
+  svg.setText(answers.text, answers.textColor);
+  let shape;
+  if (answers.shape == "Circle") {
+    shape = new Circle();
+  } else if (answers.shape == "Square") {
+    shape = new Square();
+  } else if (answers.shape == "Triangle") {
+    shape = new Triangle();
   }
+  shape.setColor(answers.shapeColor);
+  svg.setShape(shape);
+  const svgString = svg.render();
 
   fs.writeFile(fileName, svgString, (err) => {
     // writting file as well as logging error
