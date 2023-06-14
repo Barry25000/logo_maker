@@ -50,8 +50,8 @@ Please direct any questions to.<br>
 barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
 
-REPO SCREENSHOT
+<b>REPO SCREENSHOT</b>
 ![repo screenshot](https://github.com/Barry25000/logo_maker/blob/main/lib/images/Repo_screenshot.png)
 
-README SCREENSHOT<br>
+<b>README SCREENSHOT<b><br>
 ![README](https://github.com/Barry25000/logo_maker/blob/main/lib/images/readme_screenshot.png)
