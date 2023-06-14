@@ -50,4 +50,10 @@ Please direct any questions to.<br>
 barryengler@gmail.com <br>
 [GitHub](https://github.com/Barry25000)
 
-Live Video Link  https://drive.google.com/file/d/1q9j2tsN5csxeIwpfGeFiyPKezHy8ekUG/view
+Live Video Link https://drive.google.com/file/d/1q9j2tsN5csxeIwpfGeFiyPKezHy8ekUG/view
+
+<b>REPO SCREENSHOT</b>
+![repo screenshot](https://github.com/Barry25000/logo_maker/blob/main/lib/images/Repo_screenshot.png)
+
+<b>README SCREENSHOT<b><br>
+![README](https://github.com/Barry25000/logo_maker/blob/main/lib/images/readme_screenshot.png)
