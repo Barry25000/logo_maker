@@ -42,7 +42,8 @@ Barry Engler. I also used my tutor Nathan Engler and Jose Lopez to help guide me
 ## Tests
 
 To run tests, run the following command: <br>
-npm run test, all 11 tests will pass.
+npm run test, all 11 tests will pass. <br>
+Tests were created and distributed by class instrutors.
 
 ## Questions
 
