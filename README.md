@@ -43,7 +43,7 @@ Barry Engler. I also used my tutor Nathan Engler and Jose Lopez to help guide me
 
 To run tests, run the following command: <br>
 npm run test, all 11 tests will pass. <br>
-Tests were created and distributed by class instrutors.
+Tests were created and distributed by class instructors.
 
 ## Questions
 
